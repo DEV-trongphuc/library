@@ -751,12 +751,11 @@ display: fixed;
   margin-left: 34%;
 }
 .start__button:active {
-  transform: translate(-80%, -50%);
+  transform: translate(-120%, -50%);
   cursor: grabbing;
-
-
-
+  transition: 9s linear;
 }
+
 .start__button {
   position: absolute;
 user-select: none;
@@ -811,6 +810,7 @@ user-select: none;
     0 0 150px rgba(131, 236, 255, 0.84), 0 0 200px rgba(176, 246, 255, 0.84),
     0 0 270px rgba(168, 242, 255, 0.84), 0 0 330px rgba(129, 238, 255, 0.84),0 0 400px rgba(255, 255, 255, .8),0 0 450px rgba(158, 255, 250, 0.9),0 0 500px rgb(87, 231, 250),0 0 600px rgb(87, 231, 250),0 0 700px rgb(87, 231, 250),0 0 800px rgb(87, 231, 250);
 }
+
 .show__mobile1 {
   position: fixed;
   top: 0;
@@ -1242,18 +1242,18 @@ background-image: linear-gradient(
   color:rgb(173, 231, 228);
   z-index: 55;
   opacity: 0;
-  transition: 0.35s ease;
+  transition: 0.5s ease;
   user-select: none;
   
 }
 .library__text:hover {
-  color:rgb(183, 255, 251);
+  color:rgb(79, 255, 246);
 
 }
 .library__text:active {
- transform:translateX(10px);
+ transform:translateX(-10px);
  cursor: grabbing;
-
+transition: .35s ease;
 }
 .library__text-icon {
   color:rgb(173, 231, 228);
@@ -1313,6 +1313,11 @@ user-select: none;
   z-index: 5;
 opacity: 1;
 transition
+}
+.home:active ~.library__text {
+  opacity: 0;
+  transition-delay: 2s;
+  
 }
 
 

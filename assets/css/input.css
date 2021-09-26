@@ -168,6 +168,9 @@
 .snav__input:checked ~ .slider > .slider__icon__out {
   opacity: 1;
 }
+.slider__icon__out:active {
+  cursor: grabbing;
+}
 .hot__input:checked ~ .header > .navbar > .animated {
   transform: translateX(20.8rem);
   width: 3.2rem;
@@ -207,6 +210,10 @@
 .navbar-item:nth-child(3):active,
 .navbar-item:nth-child(4):active {
   transform: translateX(12px);
+  cursor: grabbing;
+}
+.slider__icon:active {
+  cursor: grabbing;
 }
 .show1__mobie:checked ~ .show__mobile1 {
   opacity: 1;
@@ -248,8 +255,8 @@
 }
 .library__input:checked ~ .bg {
   opacity: 0 !important;
-  width: 105% !important;
-  height: 105% !important;
+  width: 108% !important;
+  height: 108% !important;
 }
 .contact__input:checked ~ .bg {
   opacity: 0 !important;
