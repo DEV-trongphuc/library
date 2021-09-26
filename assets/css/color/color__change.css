@@ -1,0 +1,148 @@
+/* html + fontawesome*/
+/* <div class="color-change">
+<a href="#" class="dark__btn"> DARK MODE &nbsp; </a>
+<i class="fas fa-adjust green__icon"></i>
+        </div> */
+/* _________________NORMAL__COLOR__WEB_____________________ */
+.color-change {
+  display: fixed;
+
+  top: 15rem;
+  backface-visibility: hidden;
+  position: fixed;
+  display: grid;
+  justify-content: center;
+  width: 10rem;
+  height: 20rem;
+  background: rgba(255, 255, 255, 0.096);
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.075);
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.2fr 1fr 1fr 1fr 1fr 0.2fr;
+  grid-template-areas:
+    ". ."
+    "reseticon  pinkicon"
+    "greenicon blueicon"
+    "redicon goldicon"
+    "blackicon whiteicon";
+  top: 17rem;
+  left: -10rem;
+
+  border-radius: 5px;
+  transition: 0.5s ease;
+}
+.color-change:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 20%;
+  height: 80%;
+  background-color: rgba(255, 255, 255, 0.178);
+
+  transform: translate(-50%, -50%);
+  filter: blur(20px);
+
+  z-index: -99;
+  overflow: hidden;
+  transition: 0.35s ease;
+}
+.color-change:hover {
+  left: 0rem;
+  cursor: grab;
+}
+
+.reset__icon {
+  grid-area: reseticon;
+  padding: 1rem;
+  font-size: 2.2rem;
+  text-align: center;
+
+  color: var(--main-color);
+  transition: 0.35s;
+}
+.reset__icon:hover {
+}
+.red__icon {
+  grid-area: redicon;
+  padding: 1rem;
+  font-size: 2.2rem;
+  text-align: center;
+
+  color: var(--text-desc);
+  transition: 0.35s;
+}
+.red__icon:hover .color-change:after {
+  display: none;
+}
+.gold__icon {
+  grid-area: goldicon;
+  padding: 1rem;
+  font-size: 2.2rem;
+  text-align: center;
+
+  color: var(--text-desc);
+  transition: 0.35s;
+}
+.black__icon {
+  grid-area: blackicon;
+  padding: 1rem;
+  font-size: 2.2rem;
+  text-align: center;
+
+  color: rgb(139, 139, 139);
+  transition: 0.35s;
+}
+.white__icon {
+  grid-area: whiteicon;
+  padding: 1rem;
+  font-size: 2.2rem;
+  text-align: center;
+
+  color: white;
+  transition: 0.35s;
+}
+.gold__icon:hover {
+}
+.blue__icon {
+  grid-area: blueicon;
+  padding: 1rem;
+  font-size: 2.2rem;
+  text-align: center;
+
+  color: var(--text-desc);
+  transition: 0.35s;
+}
+.blue__icon:hover {
+}
+
+.color-change:after {
+  position: absolute;
+  backface-visibility: hidden;
+  transition: 0.45s;
+  content: ">";
+  text-align: center;
+  font-size: 4rem;
+  line-height: 4.5rem;
+  color: rgb(211, 211, 211);
+  height: 4.8rem;
+  border-radius: 0px 5px 5px 0;
+  width: 4rem;
+  top: 1rem;
+  right: -4rem;
+  transition: 0.5s ease;
+  z-index: -1;
+  background: rgba(255, 255, 255, 0.301);
+}
+
+.color__input:hover ~ .color-change:after {
+}
+.reset__input:checked ~ .color-change > .reset__icon,
+.red__input:checked ~ .color-change > .red__icon,
+.blue__input:checked ~ .color-change > .blue__icon,
+.green__input:checked ~ .color-change > .green__icon,
+.gold__input:checked ~ .color-change > .gold__icon,
+.black__input:checked ~ .color-change > .black__icon,
+.white__input:checked ~ .color-change > .white__icon {
+  transform: scale(1.1);
+  cursor: grabbing;
+}

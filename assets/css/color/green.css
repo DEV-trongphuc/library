@@ -1,0 +1,61 @@
+/* ____________________green___CHECKED________________________ */
+:root {
+  --dark-green: rgb(94, 1, 216);
+  --light-green: rgba(160, 166, 255, 0.185);
+  --wlight-green: rgb(255, 239, 248);
+}
+.green__icon {
+  grid-area: greenicon;
+  font-size: 2.2rem;
+  text-align: center;
+  padding: 1rem;
+  color: var(--dark-green);
+  transition: 0.35s;
+}
+.green__input:checked ~ .color-change:after {
+  background-color: var(--light-green);
+  color: var(--dark-green);
+}
+.green__input:checked ~ .header > .navbar > .navbar-item:hover {
+  color: var(--dark-green);
+}
+.green__input:checked ~ .header > .navbar > .animated,
+.green__input:checked ~ .header > .navbar > .navbar-item,
+.green__input:checked ~ .slider > .two__button > .slider__down,
+.green__input:checked ~ .start > .start__button,
+.green__input:checked ~ .slider > .slider__icon__out,
+.green__input:checked ~ .slider > .slider__down2 {
+  background-image: linear-gradient(
+    130deg,
+    rgb(128, 100, 255),
+    rgb(80, 32, 255)
+  );
+}
+
+.green__input:checked ~ .start > .start__button > a > span:nth-child(1):hover {
+  background: rgba(141, 110, 255, 0.062);
+  transition-delay: 0.3s;
+  /* border: 1px solid rgba(15, 219, 185, 0.116); */
+  box-shadow: 0 0 10px rgba(117, 58, 255, 0.454),
+    0 0 40px rgba(117, 58, 255, 0.454), 0 0 100px rgba(117, 58, 255, 0.454),
+    0 0 150px rgba(117, 58, 255, 0.454), 0 0 200px rgba(117, 58, 255, 0.454),
+    0 0 270px rgba(117, 58, 255, 0.454), 0 0 330px rgba(117, 58, 255, 0.454);
+}
+
+.green__input:checked ~ .mobile__nav > .mobile__button {
+  color: var(--dark-green);
+}
+.green__input:checked ~ .mobile__nav > .mobile__button > .mobile__animated {
+  background-color: var(--dark-green);
+  box-shadow: 0 0 5px var(--dark-green), 0 0 8px var(--dark-green);
+}
+.green__input:checked ~ .header > .nav__mobile {
+  color: var(--dark-green);
+}
+.green__input:checked ~ .color-change > .green__icon {
+  transform: scale(1.1);
+  cursor: grabbing;
+}
+.green__input:checked ~ .slide__bar > .slider__icon > .slider__animated {
+  background-image: linear-gradient(130deg, rgb(45, 0, 206), rgb(76, 58, 160));
+}

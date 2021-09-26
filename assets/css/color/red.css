@@ -1,0 +1,57 @@
+/* ____________________red___CHECKED________________________ */
+:root {
+  --dark-red: rgb(255, 56, 56);
+  --light-red: rgba(255, 160, 184, 0.185);
+  --wlight-red: rgb(255, 239, 248);
+}
+.red__icon {
+  grid-area: redicon;
+  font-size: 2.2rem;
+  text-align: center;
+  padding: 1rem;
+  color: var(--dark-red);
+  transition: 0.35s;
+}
+.red__input:checked ~ .color-change:after {
+  background-color: var(--light-red);
+  color: var(--dark-red);
+}
+.red__input:checked ~ .header > .navbar > .navbar-item:hover {
+  color: var(--dark-red);
+}
+
+.red__input:checked ~ .slider > .two__button > .slider__down,
+.red__input:checked ~ .slider > .slider__icon__out,
+.red__input:checked ~ .slider > .slider__down2,
+.red__input:checked ~ .header > .navbar > .animated,
+.red__input:checked ~ .start > .start__button,
+.red__input:checked ~ .header > .navbar > .navbar-item {
+  background-image: linear-gradient(130deg, rgb(255, 47, 47), rgb(209, 0, 0));
+}
+.red__input:checked ~ .slide__bar > .slider__icon > .slider__animated {
+  background-image: linear-gradient(130deg, rgb(124, 0, 0), rgb(255, 0, 0));
+}
+.red__input:checked ~ .start > .start__button > a > span:nth-child(1):hover {
+  background: rgba(255, 110, 110, 0.062);
+  transition-delay: 0.3s;
+  /* border: 1px solid rgba(15, 219, 185, 0.116); */
+  box-shadow: 0 0 10px rgba(255, 116, 116, 0.454),
+    0 0 40px rgba(255, 116, 116, 0.454), 0 0 100px rgba(255, 116, 116, 0.454),
+    0 0 150px rgba(255, 175, 238, 0.454), 0 0 200px rgba(255, 116, 116, 0.454),
+    0 0 270px rgba(255, 116, 116, 0.454), 0 0 330px rgba(255, 116, 116, 0.454);
+}
+
+.red__input:checked ~ .mobile__nav > .mobile__button {
+  color: var(--dark-red);
+}
+.red__input:checked ~ .mobile__nav > .mobile__button > .mobile__animated {
+  background-color: var(--dark-red);
+  box-shadow: 0 0 5px var(--dark-red), 0 0 8px var(--dark-red);
+}
+.red__input:checked ~ .header > .nav__mobile {
+  color: var(--dark-red);
+}
+.red__input:checked ~ .color-change > .red__icon {
+  transform: scale(1.1);
+  cursor: grabbing;
+}

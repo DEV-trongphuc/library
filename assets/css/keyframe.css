@@ -1,0 +1,19 @@
+:root {
+  --main-color: rgb(55, 192, 255);
+  --mainbg-color: rgba(57, 209, 247, 0.774);
+  --light-main: rgba(203, 253, 255, 0.144);
+  --sub-color: rgba(78, 78, 78, 0.315);
+}
+.reset__input:checked ~ .color-change:after {
+  background-color: var(--light-main);
+  color: var(--main-color);
+  color: rgb(240, 255, 254);
+}
+@keyframes cursorgrab {
+  0%: {
+    cursor: grab;
+  }
+  100%: {
+    cursor: grabbing;
+  }
+}

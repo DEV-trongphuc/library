@@ -1,0 +1,66 @@
+/* ____________________PINK___CHECKED________________________ */
+:root {
+  --dark-pink: rgb(255, 151, 182);
+  --light-pink: rgba(255, 160, 184, 0.185);
+  --wlight-pink: rgb(255, 239, 248);
+}
+.pink__icon {
+  grid-area: pinkicon;
+  font-size: 2.2rem;
+  text-align: center;
+  padding: 1rem;
+  color: var(--dark-pink);
+  transition: 0.35s;
+}
+.pink__input:checked ~ .color-change:after {
+  background-color: var(--light-pink);
+  color: var(--dark-pink);
+}
+.pink__input:checked ~ .header > .navbar > .navbar-item:hover {
+  color: var(--dark-pink);
+}
+.pink__input:checked ~ .header > .navbar > .animated,
+.pink__input:checked ~ .header > .navbar > .navbar-item {
+  background-image: linear-gradient(
+    130deg,
+    rgb(252, 140, 242),
+    rgb(255, 103, 103)
+  );
+}
+.pink__input:checked ~ .slider {
+  background: rgba(255, 233, 248, 0.705);
+}
+.pink__input:checked ~ .slide__bar > .slider__icon > .slider__animated {
+  background-image: linear-gradient(
+    130deg,
+    rgb(252, 140, 242),
+    rgb(255, 45, 45)
+  );
+}
+.pink__input:checked ~ .slider > .two__button > .slider__down,
+.pink__input:checked ~ .slider > .slider__icon__out,
+.pink__input:checked ~ .slider > .slider__down2 {
+  background-image: linear-gradient(
+    130deg,
+    rgb(252, 140, 242),
+    rgb(255, 103, 103)
+  );
+}
+
+.pink__input:checked ~ .mobile__nav > .mobile__button {
+  color: var(--dark-pink);
+}
+.pink__input:checked ~ .mobile__nav > .mobile__button > .mobile__animated {
+  background-color: var(--dark-pink);
+  box-shadow: 0 0 5px var(--dark-pink), 0 0 8px var(--dark-pink);
+}
+.pink__input:checked ~ .header > .nav__mobile {
+  color: var(--dark-pink);
+}
+.pink__input:checked ~ .color-change > .pink__icon {
+  transform: scale(1.1);
+  cursor: grabbing;
+}
+.pink__input:checked ~ .bg1 {
+  opacity: 0.9;
+}

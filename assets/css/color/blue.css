@@ -1,0 +1,54 @@
+/* ____________________blue___CHECKED________________________ */
+:root {
+  --dark-blue: rgb(0, 132, 209);
+  --light-blue: rgba(145, 206, 255, 0.185);
+  --wlight-blue: rgb(255, 239, 248);
+}
+.blue__icon {
+  grid-area: blueicon;
+  font-size: 2.2rem;
+  text-align: center;
+  padding: 1rem;
+  color: var(--dark-blue);
+  transition: 0.35s;
+}
+.blue__input:checked ~ .color-change:after {
+  background-color: var(--light-blue);
+  color: var(--dark-blue);
+}
+.blue__input:checked ~ .header > .navbar > .navbar-item:hover {
+  color: var(--dark-blue);
+}
+.blue__input:checked ~ .header > .navbar > .animated,
+.blue__input:checked ~ .header > .navbar > .navbar-item,
+.blue__input:checked ~ .slider > .two__button > .slider__down,
+.blue__input:checked ~ .slider > .slider__down2,
+.blue__input:checked ~ .start > .start__button,
+.blue__input:checked ~ .slider > .slider__icon__out,
+.blue__input:checked ~ .slide__bar > .slider__icon > .slider__animated {
+  background-image: linear-gradient(130deg, rgb(0, 162, 255), rgb(0, 50, 124));
+}
+
+.blue__input:checked ~ .mobile__nav > .mobile__button {
+  color: var(--dark-blue);
+}
+.blue__input:checked ~ .mobile__nav > .mobile__button > .mobile__animated {
+  background-color: var(--dark-blue);
+  box-shadow: 0 0 5px var(--dark-blue), 0 0 8px var(--dark-blue);
+}
+.blue__input:checked ~ .header > .nav__mobile {
+  color: var(--dark-blue);
+}
+.blue__input:checked ~ .color-change > .blue__icon {
+  transform: scale(1.1);
+  cursor: grabbing;
+}
+.blue__input:checked ~ .start > .start__button > a > span:nth-child(1):hover {
+  background: rgba(110, 209, 255, 0.062);
+  transition-delay: 0.3s;
+  /* border: 1px solid rgba(15, 219, 185, 0.116); */
+  box-shadow: 0 0 10px rgba(44, 206, 255, 0.454),
+    0 0 40px rgba(44, 206, 255, 0.454), 0 0 100px rgba(44, 206, 255, 0.454),
+    0 0 150px rgba(44, 206, 255, 0.454), 0 0 200px rgba(44, 206, 255, 0.454),
+    0 0 270px rgba(44, 206, 255, 0.454), 0 0 330px rgba(44, 206, 255, 0.454);
+}
