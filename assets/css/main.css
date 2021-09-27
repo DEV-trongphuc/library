@@ -51,7 +51,7 @@ body {
   height: 100%;
 }
 .bg {
-  opacity: 0.8;
+  opacity: 0.9;
 }
 .header {
   /* margin-top: -1rem; */
@@ -331,8 +331,8 @@ body {
   text-align: center;
   align-items: center;
   transition: 0.6s ease;
-  box-shadow: 0 0 3px rgba(207, 207, 207, 0.89),0 0 6px rgba(26, 26, 26, 0.89);
-  backdrop-filter: blur(2px);
+  box-shadow: 0 0 3px rgba(141, 141, 141, 0.89),0 0 6px rgba(92, 92, 92, 0.89);
+  backdrop-filter: blur(0px);
   backface-visibility: hidden;
 }
 
@@ -448,8 +448,8 @@ display: fixed;
 .slider3 {
   width: 92%;
   height: 80vh;
-  box-shadow: 0 0 3px rgb(167, 167, 167),
-    0 0 4px rgba(65, 65, 65, 0.58),
+  box-shadow: 0 0 3px rgba(248, 248, 248, 0.493),
+    0 0 4px rgba(138, 138, 138, 0.58),
     0 0 6px rgba(43, 43, 43, 0.219),  0 0 8px rgba(75, 75, 75, 0.705);
   background: rgba(254, 255, 255, 0.00);
   /* background: rgba(235, 235, 235, 0.03); */
@@ -630,7 +630,7 @@ display: fixed;
   line-height: 5rem;
   overflow: hidden;
   padding: 0rem 0;
-  box-shadow: 0 0 3px rgba(65, 65, 65, 0.573),0 0 7px rgba(36, 36, 36, 0.473);
+  box-shadow: 0 0 3px rgba(187, 187, 187, 0.573),0 0 7px rgba(36, 36, 36, 0.473);
   border-radius:5px;
   backdrop-filter:blur(5px);
 }
