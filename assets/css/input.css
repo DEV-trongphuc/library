@@ -261,8 +261,8 @@
 }
 .library__input:checked ~ .bg {
   opacity: 0 !important;
-  width: 106% !important;
-  height: 106% !important;
+  /* width: 100% !important;
+  height: 101% !important; */
 }
 .contact__input:checked ~ .bg {
   opacity: 0 !important;
