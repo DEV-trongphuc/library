@@ -33,6 +33,7 @@
 .home__input:checked ~ .slider,
 .home__input:checked ~ .circle__bg {
   transform: translateX(-150%) !important;
+  opacity: 0 !important;
 }
 .hot__input:checked ~ .slider {
   transform: translateX(-150%) !important;
@@ -255,8 +256,8 @@
 }
 .library__input:checked ~ .bg {
   opacity: 0 !important;
-  width: 108% !important;
-  height: 108% !important;
+  width: 106% !important;
+  height: 106% !important;
 }
 .contact__input:checked ~ .bg {
   opacity: 0 !important;
