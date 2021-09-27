@@ -24,6 +24,7 @@
 }
 .home__input:checked ~ .sliderbody {
   transform: translate(150%, -105%) !important;
+  opacity: 0;
 }
 .hot__input:checked ~ .circle__bg,
 .library__input:checked ~ .circle__bg,
@@ -37,15 +38,19 @@
 }
 .hot__input:checked ~ .slider {
   transform: translateX(-150%) !important;
+  opacity: 0 !important;
 }
 .hot__input:checked ~ .sliderbody {
   transform: translate(150%, -105%) !important;
+  opacity: 0;
 }
 .contact__input:checked ~ .sliderbody {
   transform: translate(150%, -105%) !important;
+  opacity: 0;
 }
 .contact__input:checked ~ .slider {
   transform: translateX(-150%) !important;
+  opacity: 0 !important;
 }
 .scontainer__input:checked ~ .slider {
   transform: translatey(150%) !important;
