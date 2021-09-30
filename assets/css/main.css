@@ -452,7 +452,7 @@ display: fixed;
     0 0 4px rgba(138, 138, 138, 0.58),
     0 0 6px rgba(43, 43, 43, 0.219),  0 0 8px rgba(75, 75, 75, 0.705);
   background: rgba(254, 255, 255, 0.00);
-  /* background: rgba(235, 235, 235, 0.03); */
+  /* background: rgba(235, 235, 235, 0.103); */
 
   transform: translatex(-150%);
   z-index: 10000000000000000000000;
@@ -462,17 +462,17 @@ display: fixed;
   margin-top: 3rem;
   overflow: auto;
   display: grid;
-  backdrop-filter: blur(2px);
-  grid-template-columns: 1fr 5fr 3fr;
-  grid-template-rows: 10rem 25rem 25rem 25rem 25rem 6rem;
+  backdrop-filter: blur(1px);
+  grid-template-columns:6fr 3fr .8fr;
+  grid-template-rows: 9rem 25rem 25rem 25rem 25rem 6rem;
   user-select: none;
   grid-template-areas:
-    "out . ."
-    ". source downs"
-    ". source3 gradient"
-    ". source4 button2"
-    ". source5 button3"
-    ". gotop . ";
+    ". . out"
+    "source downs ."
+    "source3 gradient ."
+    "source4 button2 ."
+    "source5 button3 ."
+    "gotop .  .";
 }
 .sreset__input {
   overflow: auto;
